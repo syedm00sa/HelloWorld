@@ -23,7 +23,6 @@ public class Person {
 		this.age = age;
 	}
 	public Person(int id,String name, int age) {
-		super();
 		this.id=id;
 		this.name = name;
 		this.age = age;
