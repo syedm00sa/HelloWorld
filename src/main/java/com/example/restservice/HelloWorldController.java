@@ -25,16 +25,15 @@ public class HelloWorldController {
 	}
 	@GetMapping("/hello/person/{Id}")
 	public Person getPersonWithId1(@PathVariable("Id") Integer Id){
-		 if (Id==1) {
+		if (Id==1) {
 		        return new Person(1,"Syed", 21);
 		    } 
-		 if (Id==2) {       
+		 else if (Id==2) {       
 		        return new Person(2,"Ajay", 22);
 		 }
-		 if (Id==3) {       
-		        return new Person(3,"Sundar", 25);
-	        }     
-		 
+		 else if (Id==3) {       
+		       return new Person(3,"Sundar", 25);
+		 }	 
 		 return null;
 	}
 }
